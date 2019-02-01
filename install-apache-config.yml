@@ -1,0 +1,7 @@
+---
+
+  - name: "Apache installation"
+    hosts: apache
+    roles:
+      - role: "apache-galaxy"
+      - role: "apache-config"

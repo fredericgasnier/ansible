@@ -1,0 +1,20 @@
+ansible.fred.lan.intra ansible_user=fred ansible_host=192.168.33.100
+apache1.fred.lan.intra ansible_user=fred ansible_host=192.168.33.50
+SQL.fred.lan.intra ansible_user=fred ansible_host=192.168.33.180
+gate-pass.fred.lan.intra ansible_user=fred ansible_host=192.168.33.1
+
+[apache_web]
+apache1
+
+[mysql]
+SQL
+
+[defaults]
+enable_task_debugger=True
+strategy=debug
+
+[apache_web:vars]
+php_install=yes
+
+[mysql:vars]
+php_install=yes

@@ -1,0 +1,8 @@
+---
+
+  - name: "Installation mariadb"
+    hosts: mysql
+    gather_facts: no
+    roles:
+      - role: "mariadb"
+

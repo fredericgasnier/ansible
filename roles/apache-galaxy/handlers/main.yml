@@ -1,0 +1,7 @@
+---
+# handlers file for apache-galaxy
+
+  - name: "apache restart"
+    service:
+      name: "httpd"
+      state: "restarted"
